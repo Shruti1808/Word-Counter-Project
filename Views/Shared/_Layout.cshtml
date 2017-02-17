@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <meta charset="utf-8">
     <title>Word Repeat Counter</title>
-  </head>
-  <body>
-      <div class="container">
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WORD Counter</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">More Tools</a></li>
+                        <li><a href="#">Help Us Out</a></li>
+                        <li><a href="#">Suggest a Feature</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
         @RenderBody()
     </div>
-  </body>
+</body>
 </html>
