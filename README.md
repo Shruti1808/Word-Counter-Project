@@ -17,9 +17,7 @@ This web application takes an input from the user: a word or string  of words, t
 * View "http://localhost:5004" in your default web browser.
 
 ## Specifications
-**If the user chooses a word that is no match in the string, return the count as 0.**
-* Example Input: "Hello world"
-* Example Output: Count = 0;
+
 
 **If the user enters a word and a string then count the instances of word.**
 * Example Input: "world", "Travel the world",
@@ -29,9 +27,9 @@ This web application takes an input from the user: a word or string  of words, t
 * Example Input: "cats"; "Red cats orange cats brown cats blue cats purple cats"
 * Example Output: "'cats' appears 5 times." Count = 5;
 
-**If the user enters a word or a string of words that is capitalized, then ignore the matching word in the string.**
-* Example Input: "cat"; Cats are so cute. I love cats"
-* Example Output: Count = 1;
+**If the user chooses a word that is no match in the string, return the count as 0.**
+* Example Input: "Hello world"
+* Example Output: Count = 0;
 
 **Only return full word match, not if the string is contained within words.**
 * Example Input: "cat"; "I walked my cat to the cathedral."
@@ -40,6 +38,10 @@ This web application takes an input from the user: a word or string  of words, t
 **If the user enters a word or a string of words that has punctuation , then ignore it.**
 * Example Input: "cat"; "Cats are so cute. I love cat, and I have a brown cat."
 * Example Output: Count = 2;
+
+**If the user enters a word or a string of words that is capitalized, then ignore the matching word in the string.**
+* Example Input: "cat"; Cats are so cute. I love my cat."
+* Example Output: Count = 1;
 
 ## Support and contact details
 
