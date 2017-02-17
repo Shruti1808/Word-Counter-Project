@@ -64,3 +64,29 @@ This web application uses:
 *This project is licensed under the MIT license.*
 
 Copyright (c) 2017 **_ Shruti Priya_**
+<!-- // private string _wordToFind;
+// private string _sentenceToSearch;
+// private int _userCount;
+
+// public RepeatCounter(string wordToFind, string sentenceToSearch)
+// {
+//     _wordToFind = wordToFind;
+//     _sentenceToSearch = sentenceToSearch;
+//     _userCount = 0;
+// }
+// public string GetWordToFind()
+// {
+//     return _wordToFind;
+// }
+// public void SetWordToFind()
+// {
+//     _wordToFind = wordToFind;
+// }
+// public string GetSentenceToSearch()
+// {
+//     return _sentenceToSearch;
+// }
+// public void SetSentenceToSearch()
+// {
+//     _sentenceToSearch = sentenceToSearch;
+// } -->

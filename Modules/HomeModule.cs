@@ -1,6 +1,6 @@
 using Nancy;
 using System.Collections.Generic;
-using Namespace.Objects;
+using WordCounter.Objects;
 
 
 namespace WordCounter
