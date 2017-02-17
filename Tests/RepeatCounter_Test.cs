@@ -7,7 +7,7 @@ namespace WordCounter
 {
     public class RepeatCounterTest
     {
-        //if user enters a word with one instance.
+        //If user enters a word with one instance.
         [Fact]
         public void RepeatCounter_userInputOneInstance_CountOne()
         {
@@ -21,6 +21,8 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
+
+        //Test if the word word is repeated more than once in the input sentence by the user.
         [Fact]
         public void RepeatCounter_userInputMultipleInstances_CountFive()
         {
@@ -34,8 +36,9 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
-             [Fact]
-           public void RepeatCounter_userInputNoMatch_CountZero()
+        // Test if there is no match for the input word by the user.
+        [Fact]
+        public void RepeatCounter_userInputNoMatch_CountZero()
         {
             //Arrange
             string wordToFind = "universe";
@@ -47,5 +50,22 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
+        [Fact]
+        public void RepeatCounter_userInputFullMatch_CountOne()
+        {
+            //Arrange
+            string wordToFind = "cat";
+            string sentenceToSearch = "I walked my cat to the cathedral.";
+            string expectedResult = "1";
+            //Act
+            RepeatCounter testRepeatCounter = new RepeatCounter();
+            string result = testRepeatCounter.CountRepeats(wordToFind,sentenceToSearch);
+            //Assert
+            Assert.Equal(expectedResult, result);
+        }
+        
+
+
+
     }
 }
