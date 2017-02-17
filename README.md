@@ -18,7 +18,6 @@ This web application takes an input from the user: a word or string  of words, t
 
 ## Specifications
 
-
 **If the user enters a word and a string then count the instances of word.**
 * Example Input: "world", "Travel the world",
 * Example Output: "world" appears 1 time .Count = 1;
@@ -28,7 +27,7 @@ This web application takes an input from the user: a word or string  of words, t
 * Example Output: "'cats' appears 5 times." Count = 5;
 
 **If the user chooses a word that is no match in the string, return the count as 0.**
-* Example Input: "Hello world"
+* Example Input: "universe", "Hello world"
 * Example Output: Count = 0;
 
 **Only return full word match, not if the string is contained within words.**

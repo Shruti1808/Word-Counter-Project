@@ -34,5 +34,18 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
+             [Fact]
+           public void RepeatCounter_userInputNoMatch_CountZero()
+        {
+            //Arrange
+            string wordToFind = "universe";
+            string sentenceToSearch = "Hello world";
+            string expectedResult = "0";
+            //Act
+            RepeatCounter testRepeatCounter = new RepeatCounter();
+            string result = testRepeatCounter.CountRepeats(wordToFind,sentenceToSearch);
+            //Assert
+            Assert.Equal(expectedResult, result);
+        }
     }
 }
