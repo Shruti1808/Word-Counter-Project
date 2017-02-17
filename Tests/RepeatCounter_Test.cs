@@ -82,7 +82,7 @@ namespace WordCounter
             //Arrange
             string wordToFind = "cat";
             string sentenceToSearch = "Cats are so cute. I love my cat.";
-            string expectedResult = "2";
+            string expectedResult = "1";
             //Act
             RepeatCounter testRepeatCounter = new RepeatCounter();
             string result = testRepeatCounter.CountRepeats(wordToFind,sentenceToSearch);
