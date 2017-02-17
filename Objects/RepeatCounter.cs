@@ -5,16 +5,7 @@ namespace WordCounter.Objects
 {
     public class RepeatCounter
     {
-
-        // public int GetUserCount()
-        // {
-        //     return _userCount;
-        // }
-        // // public void SetUserCount()
-        // // {
-        // //     _userCount = CountRepeats();
-        // // }
-            public string CountRepeats(string wordToFind, string sentenceToSearch)
+        public string CountRepeats(string wordToFind, string sentenceToSearch)
             {
                 //Converts the input to lowercase word to match
                 wordToFind = wordToFind.ToLower();
