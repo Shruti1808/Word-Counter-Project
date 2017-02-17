@@ -63,6 +63,19 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
+        [Fact]
+        public void RepeatCounter_userInputIgnorePunctuation_CountTwo()
+        {
+            //Arrange
+            string wordToFind = "cat";
+            string sentenceToSearch = "Cats are so cute. I love cat, and I have a brown cat.";
+            string expectedResult = "2";
+            //Act
+            RepeatCounter testRepeatCounter = new RepeatCounter();
+            string result = testRepeatCounter.CountRepeats(wordToFind,sentenceToSearch);
+            //Assert
+            Assert.Equal(expectedResult, result);
+        }
         
 
 
