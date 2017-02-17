@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
- namespace Namespace.Objects
+ namespace WordCounter.Objects
  {
      public class Class
      {

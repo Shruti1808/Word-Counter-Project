@@ -3,9 +3,9 @@ using Namespace.Objects;
 using System;
 using System.Collections.Generic;
 
-namespace Namespace
+namespace WordCounter
 {
-    public class ClassTest
+    public class CounterTest
     {
         [Fact]
         public void methodWeAreTesting_whatBehaviorWeAreTesting_expectedResultOfTest()
