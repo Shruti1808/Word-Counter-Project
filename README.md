@@ -6,7 +6,7 @@
 
 ## Description
 
-This web application takes an input from the user: a word or string  of words, to find how frequently the word appears in that string. The application then provides the count for that word.
+This web application takes an input from the user: a word or string  of words, to find how frequently the word appears in that string. The application then provides the number of times the user's chosen word appears in their chosen sentence.
 
 ## Setup/Installation Requirements
 

@@ -5,5 +5,13 @@ using System.Collections.Generic;
  {
      public class RepeatCounter
      {
+        public static CountRepeats(string wordToFind, string sentenceToSearch)
+        {
+            //Converts the input to lowercase word to match 
+         wordToFind = wordToFind.ToLower();
+         sentenceToSearch = sentenceToSearch.ToLower();
+            char separators = { ' ', ',', '.', ':' };
+            string[] words = sentenceToSearch.Split(separators);
+        }
      }
  }

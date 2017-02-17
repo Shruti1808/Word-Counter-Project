@@ -1,5 +1,5 @@
 using Xunit;
-using Namespace.Objects;
+using WordCounter.Objects;
 using System;
 using System.Collections.Generic;
 
