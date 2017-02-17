@@ -22,8 +22,8 @@ namespace WordCounter.Objects
                     }
                 }
 
-                int amount = matchedWords.Count;
-                string result = amount.ToString();
+                int repeatCount = matchedWords.Count;
+                string result = repeatCount.ToString();
                 return result;
             }
         }
