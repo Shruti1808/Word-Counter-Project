@@ -76,7 +76,20 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
-        
+        [Fact]
+        public void RepeatCounter_userInputIgnoreUppercase_CountOne()
+        {
+            //Arrange
+            string wordToFind = "cat";
+            string sentenceToSearch = "Cats are so cute. I love my cat.";
+            string expectedResult = "2";
+            //Act
+            RepeatCounter testRepeatCounter = new RepeatCounter();
+            string result = testRepeatCounter.CountRepeats(wordToFind,sentenceToSearch);
+            //Assert
+            Assert.Equal(expectedResult, result);
+        }
+
 
 
 
