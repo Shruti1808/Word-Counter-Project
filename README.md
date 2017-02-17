@@ -11,31 +11,35 @@ This web application takes an input from the user: a word or string  of words, t
 ## Setup/Installation Requirements
 
 * Requires DNU, DNX, and Mono.
-* Clone to local machine.
-* Use command "dnu restore" in command prompt/shell.
+* Clone repository to local machine.
+* Use command "dnu restore" in Powershell to restore dependencies.
 * Use command "dnx kestrel" to start server.
-* Navigate to http://localhost:5004 in web browser of choice.
+* View "http://localhost:5004" in your default web browser.
 
 ## Specifications
-**If the user chooses a word that is not in the string, the string will not be changed.**
-* Example Input: "Hello world", "phone", "bananas"
-* Example Output: "Hello world"
+**If the user chooses a word that is no match in the string, return the count as 0.**
+* Example Input: "Hello world"
+* Example Output: Count = 0;
 
-**If the user chooses a word that exactly matches the entire string, the entire string will be replaced.**
-* Example Input: "hello", "hello", "goodbye"
-* Example Output: "goodbye"
+**If the user enters a word and a string then count the instances of word.**
+* Example Input: "world", "Travel the world",
+* Example Output: "world" appears 1 time .Count = 1;
 
-**If the user chooses a word that exactly matches a word in the string, the word will be replaced.**
-* Example Input: "Hello world", "world", "universe"
-* Example Output: "Hello universe"
+**If the user enters a word or a string then count the multiple instances of word.**
+* Example Input: "cats"; "Red cats orange cats brown cats blue cats purple cats"
+* Example Output: "'cats' appears 5 times." Count = 5;
 
-**If the user chooses a word that is in the string but is all in uppercase, the matching word in the string will be replaced.**
-* Example Input: "Hello world", "HELLO", "GOODBYE"
-* Example Output: "GOODBYE world"
+**If the user enters a word or a string of words that is capitalized, then ignore the matching word in the string.**
+* Example Input: "cat"; Cats are so cute. I love cats"
+* Example Output: Count = 1;
 
-**If the user chooses a word that is in the string and is capitalized, the matching word in the string will be replaced.**
-* Example Input: "Hello world", "World", "universe"
-* Example Output: "Hello universe"
+**Only return full word match, not if the string is contained within words.**
+* Example Input: "cat"; "I walked my cat to the cathedral."
+* Example Output: Count = 1;
+
+**If the user enters a word or a string of words that has punctuation , then ignore it.**
+* Example Input: "cat"; "Cats are so cute. I love cat, and I have a brown cat."
+* Example Output: Count = 2;
 
 ## Support and contact details
 
@@ -44,7 +48,9 @@ Please contact Shruti Priya at shrutipriya1808@gmail.com with any questions, con
 ## Technologies Used
 
 This web application uses:
-* Nancy
+
+* HTML,CSS and Bootstrap framework
+* Nancy framework
 * Mono
 * DNVM
 * C#

@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 namespace WordCounter
 {
-    public class CounterTest
+    public class RepeatCounterTest
     {
         [Fact]
-        public void methodWeAreTesting_whatBehaviorWeAreTesting_expectedResultOfTest()
+        public void RepeatCounterTest_whatBehaviorWeAreTesting_expectedResultOfTest()
         {
             //arrange
             //act
