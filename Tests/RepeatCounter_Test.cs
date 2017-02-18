@@ -50,6 +50,7 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
+        // Test if there is full match for the input word by the user.
         [Fact]
         public void RepeatCounter_userInputFullMatch_CountOne()
         {
@@ -63,6 +64,7 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
+        // Test to ignore punctuation for the input word by the user.
         [Fact]
         public void RepeatCounter_userInputIgnorePunctuation_CountTwo()
         {
@@ -76,6 +78,7 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
+        // Test to ignore the use of Uppercase in the input word by the user.
         [Fact]
         public void RepeatCounter_userInputIgnoreUppercase_CountOne()
         {
@@ -89,9 +92,5 @@ namespace WordCounter
             //Assert
             Assert.Equal(expectedResult, result);
         }
-
-
-
-
     }
 }
