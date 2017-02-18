@@ -2,4 +2,9 @@ body{
     background-image: url("../img/word1.jpeg");
     background-size: 100%;
     background-repeat: no-repeat;
+    color : white;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.jumbotron{
+    color: #905B5B;
 }
